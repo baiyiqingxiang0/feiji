@@ -92,7 +92,7 @@ class Clip(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.image = clip_img
         self.rect = self.image.get_rect()
-        self.speed = 10
+        self.speed = 5
         self.rect.topleft = init_pos
 
     def move(self):
@@ -163,7 +163,7 @@ player = Player(player_image, player_rect, player_pos)
 player_down_img = pygame.image.load(path_+'planeBoom_2.jpg')
 bullet_image = pygame.image.load(path_+'bullet2.jpg')
 bullet_rect = bullet_image.get_rect()
-clip_img = pygame.image.load(path_+'bullet2.jpg')
+clip_img = pygame.image.load(path_+'clip.png')
 clip_rect = clip_img.get_rect()
 enemy_img = pygame.image.load(path_+'enemy_2.jpg')
 enemy_rect = enemy_img.get_rect()
